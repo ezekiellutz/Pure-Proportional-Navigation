@@ -13,7 +13,8 @@ The contents of this GitHub repository, including but not limited to the pure_pr
 Proportional Navigation, (PN or Pro-Nav), is a guidance law employed by some surface-to-air missiles to guide a missile to an intended target. Pro-Nav is based on the fact that two objects are on a collision course with each other when their direct line-of-sight does not change direction as their closing distance approaches zero. With Pro-Nav, the acceleration vector of the missile is always perpendicular to the missile's instantaneous velocity vector. This differs from Pro-Nav's predecessor (Pursuit Guidance), in which the acceleration vector of the missile was always pointed towards the target. Because Pro-Nav's acceleration vector is perpendicular to the instantaneous velocity vector, the missile can calculate a point-of-intercept for itself and the target. This distinction makes Pro-Nav the superior guidance of choice for missile seeking to reach their target much faster than if they used Pursuit Guidance.
 
 
-![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910372-41313d75-5fb4-4f1c-80ea-064652719b22.jpg)
+
+![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910763-5e499967-b767-40e8-a003-c37dd4724d57.jpg)
 
 
 
