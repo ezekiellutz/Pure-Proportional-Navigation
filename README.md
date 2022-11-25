@@ -17,5 +17,7 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 # How Pure Proportional Navigation (PPN) Works:
 
 
+
 ![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910763-5e499967-b767-40e8-a003-c37dd4724d57.jpg)
 
+![Untitled](https://user-images.githubusercontent.com/83550613/204049827-25c9a2d0-66cf-4fcf-a390-f562ff889d1e.png)
