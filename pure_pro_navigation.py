@@ -46,7 +46,7 @@ total_updates = int(engagement_duration/dt)      # Total number of updates/data 
 """"""""""""""""""""""""""""""""""""
 """      Parameter Updates       """
 """"""""""""""""""""""""""""""""""""
-N = 5                                   # Navigation Gain. Sometimes called the "Proportionality Constant",  as called the "Navigation Ratio".
+N = 5                                   # Navigation Gain. Sometimes called the "Proportionality Constant",  also called the "Navigation Ratio".
                                         # Unitless integer number, typically between 3-5.
 
 missile_position_Z   =  0                   # Position of the missile in the Z-axis, units in kilometers.
@@ -126,7 +126,7 @@ for i in range(total_updates):
     target_position_Z = target_position_Z + target_velocity_Z*dt + current_velocity_Z*dt    #Updated missile position in the Z-axis, units in kilometers.
     target_position_X = target_position_X + target_velocity_X*dt + current_velocity_X*dt    #Updated missile position in the X-axis, units in kilometers.
     
-    #The commands below append various lists with the value for several variables of interest for each iteration. 
+    # The commands below append various lists with the value for several variables of interest for each iteration. 
     
     list_missile_position_Z.append(missile_position_Z)
     list_missile_position_X.append(missile_position_X)
@@ -142,9 +142,9 @@ for i in range(total_updates):
     list_perpendicular_acceleration.append(ap)
     list_time_since_launch.append(time_since_launch)
     
-    distance_check = math.isclose(R, 0, abs_tol=0.2)      # Creates a "check" variable to see if the closing distance from the missile to the target is less than 1 meter. 
+    distance_check = math.isclose(R, 0, abs_tol=0.2)      # Creates a "check" variable to see if the closing distance from the missile to the target is less than 200 meters. 
     
-    if distance_check == True:                          # If the distance from the missile to the target is within 400 meters, the missile "detonates" and the simulation ends.   
+    if distance_check == True:                            # If the distance from the missile to the target is within 200 meters, the missile "detonates" and the simulation ends.   
         print("BOOM!")
         break
 
