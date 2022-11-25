@@ -44,7 +44,7 @@ total_updates = int(engagement_duration/dt)      # Total number of updates/data 
     
    
 """"""""""""""""""""""""""""""""""""
-"""      Parameter Updates       """
+"""      Initial Parameters      """
 """"""""""""""""""""""""""""""""""""
 N = 5                                   # Navigation Gain. Sometimes called the "Proportionality Constant",  also called the "Navigation Ratio".
                                         # Unitless integer number, typically between 3-5.
