@@ -28,14 +28,15 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 
 # Acknowledged Limitations of the Model 
+Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
 
-1.) Assumes that the acceleration of the missile is instantaneous
+1.) The model assumes that the acceleration of the missile is instantaneous. In reality, there would be two accelerations acting on the missile at the very beginning of the engagement. One acceleration vector would point in the direction of the missile's instantaneous velocity vector, and one perpendicular to the instantaneous velocity vector. Once the missile reaches cruising velocity, only one acceleration vector would remain for the remainder of the engagement.
 
-2.) Does not model the masses of the 
+2.) The model assumes both the missile and the target are weightless. In reality, the mass of both plays a non-trivial role in the physics behind the engagement, as well as the viability of the flight profile given the commanded acceleration by the missile and its ability to execute those accelerations 
 
-3.) Assumes that the target does not maneuver after missile launch
+3.) The model assumes that target does not accelerate at all following launch. The target does not respond dimensionally to the launch and maintains a constant velocity at all times. Because the acceleration of the target is zero, the model here could technically be considered an Augmented Proportional Navigation (APN) model.  
 
-4.) Only models motion in 2 mutually perpendicular axes. 
+4.) The model is 2-dimensional and simulates motion only in the X and Z axes. In reality, all 3 axes would need to be modeled and the mathematics to support this become more complex.  
 
 # Bibliography
 
