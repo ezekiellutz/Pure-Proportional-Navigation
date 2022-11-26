@@ -16,13 +16,9 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 # How Pure Proportional Navigation (PPN) Works:
 
-![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/204072442-bb94fd48-74ff-42e0-8d15-c9c3389beae4.jpg)
+To begin the engagement, PPN requires that you know the magnitude of sseveral different parameters at the time of launch. These parameters include the following:
 
-![Screenshot 2022-11-25 235259](https://user-images.githubusercontent.com/83550613/204072443-f8091a33-8e31-45e9-836f-de2005de021f.jpg)
-
-![Screenshot 2022-11-25 235260](https://user-images.githubusercontent.com/83550613/204072384-3887d187-7292-495c-ad42-228b56c4bbc0.jpg)
-
-![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204072385-ec6873e1-a3fb-4721-ab37-aa21e55314c3.jpg)
+![screen_1](https://user-images.githubusercontent.com/83550613/204109170-b0833b3b-2cb5-4543-82f0-99acdde79c7f.jpg)
 
 
 # Acknowledged Limitations of the Model 
