@@ -33,5 +33,7 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 # Bibliography
 
 [1] Macfadzean, Robert H. M. “Section 5.4: Proportional Navigation.” Surface-Based Air Defense System Analysis, edited by Robert H. M. Macfadzean, Artech House, Inc., Norwood, MA, 1992, pp. 145–156. 
+
 [2] “Proportional Navigation.” Wikipedia, Wikimedia Foundation, 18 Oct. 2022, https://en.wikipedia.org/wiki/Proportional_navigation#cite_note-1. 
+
 [3] Yanushevsky, Rafael. Modern Missile Guidance. CRC Press, 2008. 
