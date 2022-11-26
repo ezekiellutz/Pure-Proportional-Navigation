@@ -23,11 +23,11 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 ![Screenshot 2022-11-25 235260](https://user-images.githubusercontent.com/83550613/204071220-70887141-7950-4940-a445-508c1c3224fd.jpg)
 
-![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204071263-a212d279-5ff5-4e8b-87fb-50d706158e78.jpg)
+![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204071314-69a55168-0075-4b36-9c4c-5af007a64af3.jpg)
 
 
 
-#Limitations of the Model (WIP)
+# Acknowledged Limitations of the Model 
 
 1.) Assumes that the acceleration of the missile is instantaneous
 
