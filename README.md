@@ -21,3 +21,17 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 ![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910763-5e499967-b767-40e8-a003-c37dd4724d57.jpg)
 
 ![Untitled](https://user-images.githubusercontent.com/83550613/204049827-25c9a2d0-66cf-4fcf-a390-f562ff889d1e.png)
+
+
+#Limitations of the Model (WIP
+
+1.) Assumes that the acceleration of the missile is instantaneous
+2.) Does not model the masses of the 
+3.) Assumes that the target does not maneuver after missile launch
+4.) Only models motion in 2 mutually perpendicular axes. 
+
+# Bibliography
+
+[1] Macfadzean, Robert H. M. “Section 5.4: Proportional Navigation.” Surface-Based Air Defense System Analysis, edited by Robert H. M. Macfadzean, Artech House, Inc., Norwood, MA, 1992, pp. 145–156. 
+[2] “Proportional Navigation.” Wikipedia, Wikimedia Foundation, 18 Oct. 2022, https://en.wikipedia.org/wiki/Proportional_navigation#cite_note-1. 
+[3] Yanushevsky, Rafael. Modern Missile Guidance. CRC Press, 2008. 
