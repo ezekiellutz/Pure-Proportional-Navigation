@@ -17,14 +17,13 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 # How Pure Proportional Navigation (PPN) Works:
 
 
-![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910763-5e499967-b767-40e8-a003-c37dd4724d57.jpg)
+![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/204072379-d9eca996-1127-4258-99d5-49e714ac7c4d.jpg)
 
-![Screenshot 2022-11-25 235259](https://user-images.githubusercontent.com/83550613/204071209-14903070-599d-4ca6-9abe-e813c64b7610.jpg)
+![Screenshot 2022-11-25 235259](https://user-images.githubusercontent.com/83550613/204072382-bf46de01-54ce-40b2-a11a-f58a379d6b43.jpg)
 
-![Screenshot 2022-11-25 235260](https://user-images.githubusercontent.com/83550613/204071220-70887141-7950-4940-a445-508c1c3224fd.jpg)
+![Screenshot 2022-11-25 235260](https://user-images.githubusercontent.com/83550613/204072384-3887d187-7292-495c-ad42-228b56c4bbc0.jpg)
 
-![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204071314-69a55168-0075-4b36-9c4c-5af007a64af3.jpg)
-
+![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204072385-ec6873e1-a3fb-4721-ab37-aa21e55314c3.jpg)
 
 
 # Acknowledged Limitations of the Model 
