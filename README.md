@@ -17,17 +17,23 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 # How Pure Proportional Navigation (PPN) Works:
 
 
-
 ![Screenshot 2022-11-24 235259](https://user-images.githubusercontent.com/83550613/203910763-5e499967-b767-40e8-a003-c37dd4724d57.jpg)
 
-![Untitled](https://user-images.githubusercontent.com/83550613/204049827-25c9a2d0-66cf-4fcf-a390-f562ff889d1e.png)
+![Screenshot 2022-11-25 235259](https://user-images.githubusercontent.com/83550613/204071209-14903070-599d-4ca6-9abe-e813c64b7610.jpg)
+
+![Screenshot 2022-11-25 235260](https://user-images.githubusercontent.com/83550613/204071220-70887141-7950-4940-a445-508c1c3224fd.jpg)
+
+![Screenshot 2022-11-25 235262](https://user-images.githubusercontent.com/83550613/204071222-a6aff2fa-4542-49c7-a522-0253ac42eede.jpg)
 
 
-#Limitations of the Model (WIP
+#Limitations of the Model (WIP)
 
 1.) Assumes that the acceleration of the missile is instantaneous
+
 2.) Does not model the masses of the 
+
 3.) Assumes that the target does not maneuver after missile launch
+
 4.) Only models motion in 2 mutually perpendicular axes. 
 
 # Bibliography
