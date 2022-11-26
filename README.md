@@ -16,9 +16,11 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 # How Pure Proportional Navigation (PPN) Works:
 
-To begin the engagement, PPN requires that you know the magnitude of sseveral different parameters at the time of launch. These parameters include the following:
+At the start of an engagement, PPN requires that you know the magnitude of sseveral different parameters at the time of launch. A list of these known parameters is shown below:
 
-![screen_1](https://user-images.githubusercontent.com/83550613/204109170-b0833b3b-2cb5-4543-82f0-99acdde79c7f.jpg)
+![screen_1](https://user-images.githubusercontent.com/83550613/204109558-fa5ce168-badd-44ce-9582-e61fdfc16182.jpg)
+
+With the above information known, the first order of business is to calculate the relative position of the missile given the last known coordinates of the missile and target. This can be found by simply doing the following:
 
 
 # Acknowledged Limitations of the Model 
