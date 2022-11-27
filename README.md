@@ -29,7 +29,9 @@ And similarly, in the X-axis:
 
 ![screen_3](https://user-images.githubusercontent.com/83550613/204120190-17f9c39a-9d7b-4002-9e67-b1b87ea99706.jpg)
 
-At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b, albeit with the new target and missile position. In order to obtain the new position of the target, we can calculate it by doing the following: 
+At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. From this point forward, this relative position will be referred to as the "old" relative position of the missle to the target. The reasons for this will become apparent momentarily.
+
+In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b, albeit with the new target and missile position. In order to obtain the new position of the target and the missile, we can calculate it by doing the following: 
 
 ![screen_4](https://user-images.githubusercontent.com/83550613/204145068-54d82259-2523-4843-94ce-6f6ca23254f3.jpg)
 
@@ -37,7 +39,23 @@ And similarly, in the X-axis:
 
 ![screen_5](https://user-images.githubusercontent.com/83550613/204145091-f17d906d-cb53-4feb-8ad7-df3bc7bce471.jpg)
 
+It should be noted that, when calculating the new position of the missile, the equations shown in Figures 3a and 3b are applicable to the missile as well. Simply replace the target positions and velocity for the missile position and velocity and the necessary values will be obtained. Remember that the values obtained here are the "new" target and missile positions. 
 
+With the new target and missile positions obtained, the equation used in Figures 2a and 2b can be used to obtain the new relative position of the missile to the target. With this now obtained, we can calculate the closing distance between the missile and the target using the following equation:
+
+![screen_6](https://user-images.githubusercontent.com/83550613/204160692-34fa9f56-f331-4bdf-a10c-164c94fd630f.jpg)
+
+With the closing distance now known, the relative velocity of the missile to the target must be calculated. This can be calculated by doing the following:
+
+![screen_7](https://user-images.githubusercontent.com/83550613/204161335-f2bb932c-d557-4528-8b6a-d35944aa37c2.jpg)
+
+And similarly, in the X-axis:
+
+![screen_8](https://user-images.githubusercontent.com/83550613/204161338-df833741-8760-4783-9f10-fd1e2274b4de.jpg)
+
+With the relative velocity of the missile to the target now known, the Line-of-Sight Rate (LoS Rate) can now finally be calculated. This can be calculated by doing the following:
+
+![screen_9](https://user-images.githubusercontent.com/83550613/204161733-1a718eb8-3409-49b5-a1e7-58bbdb00c745.jpg)
 
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
