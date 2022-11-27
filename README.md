@@ -29,7 +29,7 @@ And similarly, in the X-axis:
 
 ![screen_3](https://user-images.githubusercontent.com/83550613/204120190-17f9c39a-9d7b-4002-9e67-b1b87ea99706.jpg)
 
-At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b...albeit with the new target and missile position. To obtain this, we must do the following: 
+At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b, albeit with the new target and missile position. In order to obtain the new position of the target, we can calculate it by doing the following: 
 
 ![screen_4](https://user-images.githubusercontent.com/83550613/204145068-54d82259-2523-4843-94ce-6f6ca23254f3.jpg)
 
