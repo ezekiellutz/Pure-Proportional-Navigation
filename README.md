@@ -58,9 +58,14 @@ And similarly, in the X-axis:
 
 ![screen_8](https://user-images.githubusercontent.com/83550613/204161338-df833741-8760-4783-9f10-fd1e2274b4de.jpg)
 
-With the relative velocity of the missile to the target now known, the Line-of-Sight Rate (LoS Rate) can now finally be calculated. This can be calculated by doing the following:
+With the relative velocity of the missile to the target now known, the Line-of-Sight Rate (LoS Rate) can now  be calculated. This can be calculated by doing the following:
 
 ![screen_9](https://user-images.githubusercontent.com/83550613/204161733-1a718eb8-3409-49b5-a1e7-58bbdb00c745.jpg)
+
+With the LoS Rate now quantified, the acceleration vector normal to the velocity vector can finally be calculated by doing the following:
+
+![screen_10](https://user-images.githubusercontent.com/83550613/204162318-d8b8ca64-7370-4aac-a69e-50a261dc0303.jpg)
+
 
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
