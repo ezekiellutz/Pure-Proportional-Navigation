@@ -12,9 +12,14 @@ The contents of this GitHub repository, including but not limited to the pure_pr
 # What is Proportional Navigation?
 Proportional Navigation, (Pro-Nav), is a guidance law employed by some surface-to-air and air-to-air missiles to guide a missile to an intended target. Pro-Nav is based on the fact that two objects are on a collision course with each other when their direct line-of-sight does not change direction as their closing distance approaches zero. With Pro-Nav, the acceleration vector of the missile is always perpendicular to the missile's instantaneous velocity vector. This differs from Pro-Nav's predecessor (Pursuit Guidance), in which the acceleration vector of the missile was always pointed towards the target. Because Pro-Nav's acceleration vector is perpendicular to the instantaneous velocity vector, the missile can calculate a point-of-intercept for itself and the target. This distinction makes Pro-Nav a superior form of guidance, as it allows the missile the ability create a collison course predictively, rather than reactively.
 
-While several different variations of Pro-Nav exist, the type of Pro-Nav modeled here is called Pure Pro-Nav (PPN). 
+While several different variations of Pro-Nav exist, the type of Pro-Nav modeled here is called Pure Pro-Nav (PPN). While there is a great deal of nomenclature differences between how Pro-Nav is defined in various circles, it is universally agreed upon that the method for determining the acceleration vector is the defining feature for whether a particular Pro-Nav variant is classified as Pure Pro-Nav, True Pro-Nav, Simple Pro-Nav, etc. The model created here defines the acceleration vector normal to the velocity vector as: 
+
+![screen_0](https://user-images.githubusercontent.com/83550613/204161862-dca88b50-5bf8-4b14-8985-d71a7d6a9ec6.jpg)
+
 
 # How Pure Proportional Navigation (PPN) Works:
+
+Ultimately, the goal in any Pro-Nav model is to quantify the value for the acceleration vector normal to the velocity vector. In order to do this for the PPN model created here, the velocity of the missile, the line-of-sight rate, and the navigational gain must be quantified.
 
 At the start of an engagement, PPN requires that you know the value of sseveral different parameters at the time of launch. A list of these known parameters is shown below:
 
