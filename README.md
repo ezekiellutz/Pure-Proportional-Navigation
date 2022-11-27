@@ -16,11 +16,21 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 # How Pure Proportional Navigation (PPN) Works:
 
-At the start of an engagement, PPN requires that you know the magnitude of sseveral different parameters at the time of launch. A list of these known parameters is shown below:
+At the start of an engagement, PPN requires that you know the value of sseveral different parameters at the time of launch. A list of these known parameters is shown below:
 
-![screen_1](https://user-images.githubusercontent.com/83550613/204109558-fa5ce168-badd-44ce-9582-e61fdfc16182.jpg)
+![screen_1](https://user-images.githubusercontent.com/83550613/204120176-5e495efb-e917-4d59-963e-930c8a4aa1c0.jpg)
 
-With the above information known, the first order of business is to calculate the relative position of the missile given the last known coordinates of the missile and target. This can be found by simply doing the following:
+
+With the above information known, the first order of business is to calculate the position of the missile relative to the target given the last known coordinates of the missile and target. The relative position must be found in each axis, which can be solved for given the following:
+
+![screen_2](https://user-images.githubusercontent.com/83550613/204120180-bcd8fd53-e2fa-410e-89a7-79e89c7cc283.jpg)
+
+And similarly, in the X-axis:
+
+![screen_3](https://user-images.githubusercontent.com/83550613/204120190-17f9c39a-9d7b-4002-9e67-b1b87ea99706.jpg)
+
+At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b...albeit with the new target and missile position. To obtain this, we must do the following: 
+
 
 
 # Acknowledged Limitations of the Model 
