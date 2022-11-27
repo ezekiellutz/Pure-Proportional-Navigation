@@ -31,6 +31,12 @@ And similarly, in the X-axis:
 
 At this point we have calculated the relative position of the missile to the target, however this was at the previous update with respect to time. In order to proceed, we need to know the new relative position of the missile to the target. In order to get this, we must now re-perform the calculations done in Figures 2a and 2b...albeit with the new target and missile position. To obtain this, we must do the following: 
 
+![screen_4](https://user-images.githubusercontent.com/83550613/204145068-54d82259-2523-4843-94ce-6f6ca23254f3.jpg)
+
+And similarly, in the X-axis:
+
+![screen_5](https://user-images.githubusercontent.com/83550613/204145091-f17d906d-cb53-4feb-8ad7-df3bc7bce471.jpg)
+
 
 
 # Acknowledged Limitations of the Model 
@@ -40,7 +46,7 @@ Like every mathematical model and simulation, the model for PPN created here is 
 
 2.) The model assumes both the missile and the target are weightless. In reality, the mass of both plays a non-trivial role in the physics behind the engagement, as well as the viability of the flight profile given the commanded acceleration by the missile and its ability to execute those accelerations 
 
-3.) The model assumes that target does not accelerate at all following launch. The target does not respond dimensionally to the launch and maintains a constant velocity at all times. Because the acceleration of the target is zero, the model here could technically be considered an Augmented Proportional Navigation (APN) model.  
+3.) The model assumes that the target does not accelerate at all following launch. The target does not attempt evasive maneuvers and maintains a constant velocity at all times. Because the acceleration of the target is zero, the model here could technically be considered an Augmented Proportional Navigation (APN) model.  
 
 4.) The model is 2-dimensional and simulates motion only in the X and Z axes. In reality, all 3 axes would need to be modeled and the mathematics to support this becomes more complex.  
 
