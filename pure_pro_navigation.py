@@ -46,21 +46,21 @@ total_updates = int(engagement_duration/dt)      # Total number of updates/data 
 """"""""""""""""""""""""""""""""""""
 """      Initial Parameters      """
 """"""""""""""""""""""""""""""""""""
-N = 5                                   # Navigation Gain. Sometimes called the "Proportionality Constant",  also called the "Navigation Ratio".
+N = 3                                   # Navigation Gain. Sometimes called the "Proportionality Constant",  also called the "Navigation Ratio".
                                         # Unitless integer number, typically between 3-5.
 
 missile_position_Z   =  0                   # Position of the missile in the Z-axis, units in kilometers.
 missile_position_X   =  0                   # Position of the missile in the X-axis, units in kilometers.
-missile_heading_angle =  1.2                # Angle between the missile velocity vector and the line of sight, units in radians.
-missile_velocity   =  1.5435                # Total velocity of the missile, units in kilometers/second.
+missile_heading_angle =  0.983              # Angle between the missile velocity vector and the line of sight, units in radians.
+missile_velocity   =  1.715                # Total velocity of the missile, units in kilometers/second.
 missile_velocity_Z =  missile_velocity * math.cos(missile_heading_angle)    # velocity of the missile in the Z-axis, units in kilometers/second.
 missile_velocity_X =  missile_velocity * math.sin(missile_heading_angle)    # velocity of the missile in the X-axis, units in kilometers/second.
 
 
 target_position_Z   =  9.144                # Position of the target in the Z-axis, units in kilometers.
-target_position_X   =  150                  # Position of the target in the X-axis, units in kilometers.
+target_position_X   =  100                  # Position of the target in the X-axis, units in kilometers.
 target_velocity_Z  =  0.033                   # Velocity of the target in the Z-axis, units in kilometers/second.
-target_velocity_X  =  0.857                 # Velocity of the target in the X-axis, units in kilometers/second.
+target_velocity_X  =  0.343                 # Velocity of the target in the X-axis, units in kilometers/second.
 target_velocity   = math.sqrt((target_velocity_Z**2 + target_velocity_X**2))    # Total velocity of the missile, units in kilometers/second.
 
 # NOTE: The below are only applied if a disturbance is present in the environment, such as a strong air current that imapcts the velocity of the missile and target.
@@ -109,11 +109,7 @@ for i in range(total_updates):
     """"""""""""""""""""""""""""""""""""
     """      Parameter Updates       """
     """"""""""""""""""""""""""""""""""""
-    
-    missile_position_Z = (missile_position_Z) + (missile_velocity_Z*dt) + (current_velocity_Z*dt)   #Updated missile position in the Z-axis, units in kilometers.
-    missile_position_X = (missile_position_X) + (missile_velocity_X*dt) + (current_velocity_X*dt)   #Updated missile position in the X-axis, units in kilometers.
-        
-    
+      
     Za = -ap * math.sin(missile_heading_angle)                 # Acceleration command to be applied normal to the missile's velocity vector in the Z-axis, units in kilometers/second-squared.
     Xa =  ap * math.cos(missile_heading_angle)                 # Acceleration command to be applied normal to the missile's velocity vector in the X-axis, units in kilometers/second-squared. 
         
