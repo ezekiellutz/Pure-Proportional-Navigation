@@ -74,11 +74,11 @@ And similarly, in the X-axis:
 
 ![screen_12](https://user-images.githubusercontent.com/83550613/204424669-99733977-2223-4c4c-997d-efe90f37097f.jpg)
 
-The last parameter to be updated is the missile heading angle. The missile heading angle wil now become:
+The last parameter to be updated is the missile heading angle. The missile heading angle will now become:
 
 ![screen_13](https://user-images.githubusercontent.com/83550613/204425214-cf1ca3c0-0816-4573-9a61-e10a00a40548.jpg)
 
-The process defined above will repeat at each update interval until the engagement is over. 
+The mathematical operations performed above will continue to be performed in a loop by the program until the engagement is complete. Note that a complete engagement does not necessarily mean that the engagement will end with an intercept. The python console will let the user know if an intercept occurred or not.   
 
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
