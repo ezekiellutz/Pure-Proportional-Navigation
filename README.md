@@ -66,7 +66,19 @@ With the LoS Rate now quantified, the acceleration vector normal to the velocity
 
 ![screen_10](https://user-images.githubusercontent.com/83550613/204162318-d8b8ca64-7370-4aac-a69e-50a261dc0303.jpg)
 
-Now that the acceleration vector has been defined, several parameters of the missle will need to be updated 
+With the magnitude of the acceleration value finally defined, the missile must update several parameters in order to maintain a collision course with the target. The first parameter to be update is the missile velocity. This velocity will be updated by doing the following: 
+
+![screen_11](https://user-images.githubusercontent.com/83550613/204424614-ea1d2597-1566-470f-91df-20b00bd158c3.jpg)
+
+And similarly, in the X-axis:
+
+![screen_12](https://user-images.githubusercontent.com/83550613/204424669-99733977-2223-4c4c-997d-efe90f37097f.jpg)
+
+The last parameter to be updated is the missile heading angle. The missile heading angle wil now become:
+
+![screen_13](https://user-images.githubusercontent.com/83550613/204425214-cf1ca3c0-0816-4573-9a61-e10a00a40548.jpg)
+
+The process defined above will repeat at each update interval until the engagement is over. 
 
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
