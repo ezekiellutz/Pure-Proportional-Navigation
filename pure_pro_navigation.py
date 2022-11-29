@@ -51,22 +51,17 @@ N = 3                                   # Navigation Gain. Sometimes called the 
 
 missile_position_Z   =  0                   # Position of the missile in the Z-axis, units in kilometers.
 missile_position_X   =  0                   # Position of the missile in the X-axis, units in kilometers.
-missile_heading_angle =  0.983              # Angle between the missile velocity vector and the line of sight, units in radians.
-missile_velocity   =  1.715                # Total velocity of the missile, units in kilometers/second.
+missile_heading_angle =  1.2                # Angle between the missile velocity vector and the line of sight, units in radians.
+missile_velocity   =  1.372                 # Total velocity of the missile, units in kilometers/second.
 missile_velocity_Z =  missile_velocity * math.cos(missile_heading_angle)    # velocity of the missile in the Z-axis, units in kilometers/second.
 missile_velocity_X =  missile_velocity * math.sin(missile_heading_angle)    # velocity of the missile in the X-axis, units in kilometers/second.
 
 
 target_position_Z   =  9.144                # Position of the target in the Z-axis, units in kilometers.
 target_position_X   =  100                  # Position of the target in the X-axis, units in kilometers.
-target_velocity_Z  =  0.033                   # Velocity of the target in the Z-axis, units in kilometers/second.
-target_velocity_X  =  0.343                 # Velocity of the target in the X-axis, units in kilometers/second.
+target_velocity_Z  =  0.033                 # Velocity of the target in the Z-axis, units in kilometers/second.
+target_velocity_X  =  0.514                 # Velocity of the target in the X-axis, units in kilometers/second.
 target_velocity   = math.sqrt((target_velocity_Z**2 + target_velocity_X**2))    # Total velocity of the missile, units in kilometers/second.
-
-# NOTE: The below are only applied if a disturbance is present in the environment, such as a strong air current that imapcts the velocity of the missile and target.
-
-current_velocity_Z =  0.0                   # Velocity of any disturbances in the Z-axis, units in kilometers/second.
-current_velocity_X =  0.0                   # Velocity of any disturbances in the X-axis, units in kilometers/second.
 time_since_launch = 0                       # Time since launch of missile, unit in seconds.
   
 """"""""""""""""""""""""""""""""""""
@@ -118,9 +113,6 @@ for i in range(total_updates):
     missile_velocity_X = missile_velocity_X+ Xa*dt         # Updated velocity of the missile in the Z-axis, units in kilometers/second.
         
     missile_heading_angle = math.atan2(missile_velocity_X, missile_velocity_Z)      # Updated missile heading_angle, units in radians.
-        
-    target_position_Z = target_position_Z + target_velocity_Z*dt + current_velocity_Z*dt    #Updated missile position in the Z-axis, units in kilometers.
-    target_position_X = target_position_X + target_velocity_X*dt + current_velocity_X*dt    #Updated missile position in the X-axis, units in kilometers.
     
     # The commands below append various lists with the value for several variables of interest for each iteration. 
     
@@ -193,6 +185,7 @@ df_master.to_excel('engagement_file.xlsx', index = False)
 """        Plot Creation         """
 """"""""""""""""""""""""""""""""""""
 
+# Creates and saves to the local directory a plot showing the flight path of the target and missile during the engagement.
 
 fig = plt.plot(list_target_position_X, list_target_position_Z, color='royalblue'), plt.plot(list_missile_position_X, list_missile_position_Z, color='red'), plt.plot(list_missile_position_X[0], list_missile_position_Z[0], color='red', marker='^', markersize='10'), plt.plot(list_target_position_X[0], list_target_position_Z[0], color='royalblue', marker='s', markersize='10'), plt.plot(list_missile_position_X[-1], list_missile_position_Z[-1], color='gold', marker='*', markersize='15'), plt.plot(list_missile_position_X[-1], list_missile_position_Z[-1], color='gold', marker='x', markersize='20')
 plt.xticks(rotation=45, ha="right", rotation_mode="anchor")     
