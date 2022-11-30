@@ -80,7 +80,7 @@ The last parameter to be updated is the missile heading angle. The missile headi
 
 The mathematical operations performed above will continue to be performed in a loop by the program until the engagement is complete. Note that a complete engagement does not necessarily mean that the engagement will end with an intercept. The python console will let the user know if an intercept occurred or not.   
 
-# An Overview of Navigational Gain
+# Navigational Gain, An Overview
 
 Navigational Gain, also called the proportionality constant, is a unitless-integer number that typically has values between 3 and 6. Navigational Gain determines the rate with which missile heading errors are nulled and, in turn, how aggressively the missile will accelerate normal to the velocity vector to null the heading errors. In general, lower values of navigational gain are selected for non-maneuvering targets or targets that can maneuver at low acceleration loads. Conversely, higher values of navigational gain are selected for targets that are maneuverable at high acceleration loads. While the maximum usable navigational gain is a topic of debate within technical circles, it is generally agreed upon that values for navigational gain in excess of 6 are not usable in real-world scenarios. The main reason for this is that any disturbances during the fly out will experience high accelerations due to course corrections being applied aggresively. This can have the effect of making the flight trajectory more unstable, and potentially catastrophic. 
 
