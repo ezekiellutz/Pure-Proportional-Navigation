@@ -80,6 +80,18 @@ The last parameter to be updated is the missile heading angle. The missile headi
 
 The mathematical operations performed above will continue to be performed in a loop by the program until the engagement is complete. Note that a complete engagement does not necessarily mean that the engagement will end with an intercept. The python console will let the user know if an intercept occurred or not.   
 
+#A Quick Overview of Navigational Gain
+
+Navigational Gain, also called the proportionality constant, is a unitless-integer number that typically has values between 3 and 6. Navigational Gain determines the rate with which missile heading errors are nulled and, in turn, how aggressively the missile will accelerate normal to the velocity vector to null the heading errors. In general, lower values of navigational gain are selected for non-maneuvering targets or targets that can maneuver at low acceleration loads. Conversely, higher values of navigational gain are selected for targets that are maneuverable at high acceleration loads. While the maximum usable navigational gain is a topic of debate within technical circles, it is generally agreed upon that values for navigational gain in excess of 6 are not usable in real-world scenarios. The main reason for this is that any disturbances during the fly out will experience high accelerations due to course corrections being applied aggresively. This can have the effect of making the flight trajectory more unstable, and potentially catastrophic. 
+
+The effect of Navigational Gain on the flight profile of the a given missile has been characterized using the model created here. The following plots illustrate the effect of Navigational Gain when all other variables are held constant. Notice how the flight profile lowers in altitude as navigational gain increases, and that the flight profile becomes sleeker and more optimized:
+
+![Engagement Scenario, N=3](https://user-images.githubusercontent.com/83550613/204707489-b5c09369-eeae-422b-bcde-436f928627ac.jpg)
+
+![Engagement Scenario, N=4](https://user-images.githubusercontent.com/83550613/204707508-d1d828ee-7440-44c3-b0a1-5de44f35ca45.jpg)
+
+![Engagement Scenario, N=5](https://user-images.githubusercontent.com/83550613/204707516-43dceb6d-08ca-49a8-a532-8eb68b7a802c.jpg)
+
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
 
