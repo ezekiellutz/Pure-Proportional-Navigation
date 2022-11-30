@@ -86,15 +86,15 @@ Navigational Gain, also called the proportionality constant, is a unitless-integ
 
 The effect of Navigational Gain on the flight profile of the a given missile has been characterized using the model created here. The following plots illustrate the effect of Navigational Gain when all other variables are held constant. Notice how the flight profile lowers in altitude as navigational gain increases, and that the flight profile becomes sleeker and more optimized:
 
-      ![Engagement Scenario, N=3](https://user-images.githubusercontent.com/83550613/204707489-b5c09369-eeae-422b-bcde-436f928627ac.jpg)
+   ![Engagement Scenario, N=3](https://user-images.githubusercontent.com/83550613/204707489-b5c09369-eeae-422b-bcde-436f928627ac.jpg)
 
 
-
-      ![Engagement Scenario, N=4](https://user-images.githubusercontent.com/83550613/204707508-d1d828ee-7440-44c3-b0a1-5de44f35ca45.jpg)
-
+   ![Engagement Scenario, N=4](https://user-images.githubusercontent.com/83550613/204707508-d1d828ee-7440-44c3-b0a1-5de44f35ca45.jpg)
 
 
-      ![Engagement Scenario, N=5](https://user-images.githubusercontent.com/83550613/204707516-43dceb6d-08ca-49a8-a532-8eb68b7a802c.jpg)
+   ![Engagement Scenario, N=5](https://user-images.githubusercontent.com/83550613/204707516-43dceb6d-08ca-49a8-a532-8eb68b7a802c.jpg)
+   
+   
 
 # Acknowledged Limitations of the Model 
 Like every mathematical model and simulation, the model for PPN created here is not perfect. There are multiple author-acknowledged limitations of the model including, but not limited to, the following:
