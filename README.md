@@ -19,6 +19,8 @@ While several different variations of Pro-Nav exist, the type of Pro-Nav modeled
 
 # How Pure Proportional Navigation (PPN) Works:
 
+![Diagram](https://user-images.githubusercontent.com/83550613/205420833-a60154f6-1a7d-4297-bcfb-e8cf55787c50.jpg)
+
 Ultimately, the goal in any Pro-Nav model is to quantify the value for the acceleration vector normal to the velocity vector. In order to do this for the PPN model created here, the velocity of the missile, the line-of-sight rate, and the navigational gain must be quantified.
 
 At the start of an engagement, PPN requires that you know the value of sseveral different parameters at the time of launch. A list of these known parameters is shown below:
