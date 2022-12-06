@@ -107,7 +107,9 @@ Like every mathematical model and simulation, the model for PPN created here is 
 
 3.) The model assumes that the target does not accelerate at all following launch. The target does not attempt evasive maneuvers and maintains a constant velocity at all times. Because the acceleration of the target is zero, the model here could technically be considered an Augmented Proportional Navigation (APN) model.  
 
-4.) The model is 2-dimensional and simulates motion only in the X and Z axes. In reality, all 3 axes would need to be modeled and the mathematics to support this becomes more complex.  
+4.) The model is 2-dimensional and simulates motion only in the X and Z axes. In reality, all 3 axes would need to be modeled and the mathematics to support this becomes more complex.
+
+5.) The model does not model tracker rate bias, accelerometer bias, momentary loss of guidance data, and/or random tracker errors.
 
 # Bibliography
 
